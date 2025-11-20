@@ -111,7 +111,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               variants={luxuryFadeIn}
-              className="space-y-6 text-center"
+              className="space-y-2 text-center"
               style={{ color: "var(--text-color)" }}
             >
               {/* Arabic Quote */}
