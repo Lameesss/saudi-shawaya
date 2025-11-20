@@ -86,7 +86,7 @@ export default function Hero() {
       <div className="relative z-10 h-full w-full px-8 lg:px-12 flex items-center">
         <div className="max-w-7xl mx-auto w-full">
           {/* Mobile Layout */}
-          <div className="lg:hidden flex flex-col items-center justify-center h-full">
+          <div className="lg:hidden flex flex-col items-center justify-center h-full space-y-2">
             {/* Product Image - Mobile */}
             <motion.div
               initial="hidden"
