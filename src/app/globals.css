@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  /* 3-Color Premium Cafe System - Change these 3 colors to transform entire site */
+  
+  /* 1. Background Color - Main site background */
+  --bg-color: #003cc5;
+  
+  /* 2. Heading Color - Titles, headings, bold text, nav text */
+  --heading-color: #fcb712;
+  
+  /* 3. Text Color - Paragraph text, body text */
+  --text-color: #ffffff;
+  
+  /* Premium gradient derived from new golden yellow */
+  --premium-gradient: linear-gradient(135deg, #fcb712 0%, #ffd970 30%, #e39b00 70%, #fcb712 100%);
+  
+  /* Legacy colors for compatibility */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-brown: #8B4513;
+  --color-coffee: #6F4E37;
+  --color-cream: #F5F5DC;
+  
+  /* Semantic mappings to 3-color system */
+  --primary: var(--heading-color);
+  --secondary: var(--bg-color);
+  --background: var(--bg-color);
+  --foreground: var(--heading-color);
+  --muted: var(--text-color);
+}
+
+@theme inline {
+  /* Tailwind CSS custom colors mapped to 3-color system */
+  --color-primary: var(--heading-color);
+  --color-secondary: var(--bg-color);
+  --color-accent: var(--heading-color);
+  --color-background: var(--bg-color);
+  --color-foreground: var(--heading-color);
+  --color-muted: var(--text-color);
+  
+  /* Legacy colors for compatibility */
+  --color-white: var(--color-white);
+  --color-black: var(--color-black);
+  --color-brown: var(--color-brown);
+  --color-coffee: var(--color-coffee);
+  --color-cream: var(--color-cream);
+}
+
+html, body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
